@@ -1,9 +1,9 @@
 name: Build and push Docker image
 
 on:
-  release:
-    types:
-      - created
+  workflow_run:
+    workflows: [goreleaser]
+    types: [completed]
 
 jobs:
   build-and-push:
