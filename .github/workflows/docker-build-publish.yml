@@ -36,4 +36,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}:${{ env.GIT_TAG }}
+          tags: ghcr.io/figglewatts/certexpired:${{ env.GIT_TAG }}
